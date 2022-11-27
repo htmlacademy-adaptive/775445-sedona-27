@@ -51,10 +51,59 @@
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group">
             <legend class="form__title">Представьтесь:</legend>
-            <p class="form__field-group filed">
-              <label class="field__label" for="user-name">Имя*:</label>
-              <input class="field__input" type="text" id="user-name" name="user-name" placeholder="Пётр" required>
-            </p>
+            <ul class="form__fields-list">
+              <li class="form__field-item field-text">
+                <label class="field-text__label" for="user-firstname">Имя*:</label>
+                <input class="field-text__input" type="text" id="user-firstname" name="user-firstname" placeholder="Пётр" required>
+              </li>
+              <li class="form__field-item field-text">
+                <label class="field-text__label" for="user-surname">Фамилия*:</label>
+                <input class="field-text__input" type="text" id="user-surname" name="user-surname" placeholder="Пустота" required>
+              </li>
+              <li class="form__field-item field-text">
+                <label class="field-text__label" for="user-patronymic">Отчество:</label>
+                <input class="field-text__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Викторович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title">Контактная информация:</legend>
+            <ul class="form__fields-list">
+              <li class="form__field-item field-phone">
+                <label class="field-phone__label" for="user-phone">Контактный телефон*:</label>
+                <input class="field-phone__input" type="text" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
+              </li>
+              <li class="form__field-item field-email">
+                <label class="field-email__label" for="user-email">Электронная почта*:</label>
+                <input class="field-email__input" type="text" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <ul class="form__radio-list">
+              <li class="form__radio-item radio">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="impression" value="positive" checked>
+                  <span class="radio__mark"></span>
+                  <span class="radio__text">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="form__radio-item radio">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="impression" value="negative">
+                  <span class="radio__mark"></span>
+                  <span class="radio__text">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="form__radio-item radio">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="impression" value="difficult">
+                  <span class="radio__mark"></span>
+                  <span class="radio__text">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </form>
       </div>
