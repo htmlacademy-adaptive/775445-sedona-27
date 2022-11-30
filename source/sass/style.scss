@@ -1,8 +1,9 @@
-@use "./fonts.scss";
-@use "./visually-hidden.scss";
-@use "./box-sizing.scss";
-@use "./mixins.scss";
-@use "./blocks/page.scss";
-@use "./blocks/main-index.scss";
-@use "./blocks/main-footer.scss";
-@use "./blocks/main-header.scss";
+@use "./fonts";
+@use "./box-sizing";
+@use "./visually-hidden";
+@use "./mixins";
+@use "./blocks/page";
+@use "./blocks/main-header";
+@use "./blocks/main-nav";
+@use "./blocks/main-index";
+@use "./blocks/main-footer";

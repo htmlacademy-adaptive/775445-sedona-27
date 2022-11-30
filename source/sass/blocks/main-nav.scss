@@ -1,0 +1,19 @@
+@use "../mixins";
+
+.main-nav__list {
+  @include mixins.normalize-list;
+}
+
+.main-nav__item {
+  background-color: #81b3d2;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
