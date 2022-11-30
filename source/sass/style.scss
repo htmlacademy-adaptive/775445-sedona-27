@@ -1,2 +1,8 @@
-// Начните писать стили здесь
-@use "./main-header.scss";
+@use "./fonts.scss";
+@use "./visually-hidden.scss";
+@use "./box-sizing.scss";
+@use "./mixins.scss";
+@use "./blocks/page.scss";
+@use "./blocks/main-index.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/main-header.scss";
