@@ -1,19 +1,127 @@
 @use "../mixins";
 
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav__toggle-open {
+  display: none;
+  background-color: transparent;
+  margin: 9px 12px;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
+  .main-nav__toggle-icon-open {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__toggle-close {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 19px;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
+  .main-nav__toggle-icon-close {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__toggle-icon-open {
+  display: block;
+  color: #81b3d2;
+}
+
+.main-nav__toggle-icon-close {
+  display: block;
+  color: #ffffff;
+}
+
+.main-nav__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
 .main-nav__list {
   @include mixins.normalize-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
   background-color: #81b3d2;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:first-child {
+    border-top: none;
+    box-shadow: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:last-child::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
 }
 
 .main-nav__link {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 12px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--active {
+  background-color: #669ec0;
 }
