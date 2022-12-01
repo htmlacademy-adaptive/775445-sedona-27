@@ -14,19 +14,30 @@
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта поиска гостиниц Седона.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle-open button" type="button">
+        <svg class="main-nav__toggle-icon-open" aria-hidden="true" focusable="false" fill="currentColor" role="img" aria-label="Открыть меню" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z"/>
+          <path d="M22.9 9H0V13H22.9V9Z"/>
+          <path d="M22.9 18H0V22H22.9V18Z"/>
+        </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle-close button" type="button">
+          <svg class="main-nav__toggle-icon-close" aria-hidden="true" focusable="false" fill="currentColor" role="img" aria-label="Закрыть меню" width="23" height="23" viewBox="0 0 23 23"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Форма отзыва</a>
+            <a class="main-nav__link main-nav__link--active" href="#">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
