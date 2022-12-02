@@ -6,7 +6,7 @@
 }
 
 .main-nav__toggle-open {
-  display: none;
+  display: block;
   background-color: transparent;
   margin: 9px 12px;
 
@@ -63,10 +63,17 @@
 }
 
 .main-nav__wrapper {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   display: block;
-  position: relative;
   width: 100%;
   z-index: 2;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -120,8 +127,4 @@
     background-color: #5496bd;
     opacity: 0.3;
   }
-}
-
-.main-nav__link--active {
-  background-color: #669ec0;
 }

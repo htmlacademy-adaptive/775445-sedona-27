@@ -1,0 +1,26 @@
+@use "../mixins";
+
+.advantages__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 34px 18px 17px;
+}
+
+.advantages__intro {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__br {
+  display: inline;
+}
+
+.advantages__image {
+  @include mixins.normalize-image;
+}

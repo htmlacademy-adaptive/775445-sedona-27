@@ -1,0 +1,23 @@
+.hero-index,
+.hero-inner {
+  color: #ffffff;
+  background-color: rgba(131, 179, 211, 0.7);
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.hero-index {
+  background-image: url("../img/divider-mobile.svg"), url("../img/welcome-background-mobile.jpg");
+  background-position: bottom, top;
+}
+
+.hero-inner {
+  background-image: url("../img/divider-mobile.svg"), url("../img/welcome-backgound-inner-mobile.jpg");
+  background-position: bottom, bottom;
+}
+
+.hero-index__image,
+.hero-inner__image {
+  display: block;
+  margin: 0 auto;
+}
