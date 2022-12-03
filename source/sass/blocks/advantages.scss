@@ -15,10 +15,31 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  padding: 19px 18px 16px;
 }
 
 .advantages__br {
   display: inline;
+}
+
+.advantages__list {
+  @include mixins.normalize-list;
+}
+
+.advantages__item {
+  background-color: #81b3d2;
+  padding-top: 55px;
+
+  &:first-child {
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../img/divider-mobile-advantages.svg");
+    left: 0;
+    top: -1px;
+  }
 }
 
 .advantages__image {
