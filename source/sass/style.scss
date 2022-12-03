@@ -7,7 +7,11 @@
 @use "./blocks/main-header";
 @use "./blocks/main-nav";
 @use "./blocks/main-index";
-@use "./blocks/hero";
+@use "./blocks/hero-index";
+@use "./blocks/hero-inner";
 @use "./blocks/advantages";
+@use "./blocks/advantage-main";
+@use "./blocks/benefits";
+@use "./blocks/benefit-card";
 @use "./blocks/main-footer";
 @use "./blocks/main-inner";

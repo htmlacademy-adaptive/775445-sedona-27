@@ -1,0 +1,11 @@
+@use "../mixins";
+
+.benefits {
+  @include mixins.normalize-list;
+  background-color: #ffffff;
+  padding: 23px 18px 46px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 25px;
+}
