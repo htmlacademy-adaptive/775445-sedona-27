@@ -24,17 +24,20 @@
 
 .advantages__list {
   @include mixins.normalize-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__item {
-  background-color: #81b3d2;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
 
   &:first-child {
     position: relative;
+    padding-top: 36px;
   }
 
-  &::before {
+  &:first-child::before {
     position: absolute;
     content: url("../img/divider-mobile-advantages.svg");
     left: 0;
@@ -42,6 +45,3 @@
   }
 }
 
-.advantages__image {
-  @include mixins.normalize-image;
-}
