@@ -1,10 +1,41 @@
+.benefit-card {
+  padding-left: 47px;
+}
+
 .benefit-card__title {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  padding-top: 9px;
+  padding-bottom: 15px;
+
+  &--first-icon::after,
+  &--second-icon::after,
+  &--third-icon::after {
+    position: absolute;
+  }
+
+  &--first-icon::after {
+    content: url("../img/house-mobile.svg");
+    top: 1px;
+    left: -47px;
+  }
+
+  &--second-icon::after {
+    content: url("../img/food-mobile.svg");
+    top: 2px;
+    left: -47px;
+  }
+
+  &--third-icon::after {
+    content: url("../img/gift-mobile.svg");
+    top: 1px;
+    left: -43px;
+  }
 }
 
 .benefit-card__description {

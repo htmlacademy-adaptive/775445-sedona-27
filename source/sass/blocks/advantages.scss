@@ -29,11 +29,11 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   &:first-child {
-    position: relative;
     padding-top: 36px;
   }
 
@@ -43,5 +43,24 @@
     left: 0;
     top: -1px;
   }
+
+  &--underline:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    left: 18px;
+    bottom: 1px;
+    width: 284px;
+    height: 1px;
+    background-color: #d6d6d6;
+    z-index: 3;
+  }
 }
 
+.advantages__number {
+  margin: 0 0 17px 0;
+  text-align: center;
+
+  &--primary-color {
+    color: #ffffff;
+  }
+}

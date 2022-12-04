@@ -2,6 +2,15 @@
 
 .advantage-main {
   background-color: #81b3d2;
+
+  &:first-child .advantage-main__title {
+    padding: 34px 8px 0;
+    margin-bottom: 11px;
+  }
+
+  &:first-child .advantage-main__description {
+    padding: 0 8px 39px;
+  }
 }
 
 .advantage-main__wrapper {
@@ -20,25 +29,12 @@
   color: #ffffff;
   text-align: center;
   overflow-wrap: break-word;
-  padding: 34px 8px 15px;
-
-  &::after {
-    position: absolute;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    content: "— №1 —";
-    right: 0;
-    bottom: -17px;
-    left: 0;
-    width: 80px;
-    margin: auto;
-  }
+  padding: 38px 8px 11px;
 }
 
 .advantage-main__description {
   margin: 0;
-  padding: 34px 8px 39px;
+  padding: 0 8px 36px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
