@@ -1,0 +1,5 @@
+@use "../mixins";
+
+.card-gallery__image {
+  @include mixins.normalize-image;
+}

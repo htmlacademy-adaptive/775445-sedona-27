@@ -8,7 +8,6 @@
 @use "./blocks/main-nav";
 @use "./blocks/main-index";
 @use "./blocks/hero-index";
-@use "./blocks/hero-inner";
 @use "./blocks/advantages";
 @use "./blocks/advantage-main";
 @use "./blocks/benefits";
@@ -16,8 +15,11 @@
 @use "./blocks/advantage-additional";
 @use "./blocks/find";
 @use "./blocks/map";
-@use "./blocks/main-inner";
 @use "./blocks/main-footer";
 @use "./blocks/contacts";
 @use "./blocks/social";
 @use "./blocks/copyright";
+@use "./blocks/main-inner";
+@use "./blocks/hero-inner";
+@use "./blocks/catalog";
+@use "./blocks/card-gallery";
