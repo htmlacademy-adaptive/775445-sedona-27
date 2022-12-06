@@ -1,12 +1,23 @@
-.copyright {
-  display: flex;
-  align-items: center;
-}
-
 .copyright__text {
   margin: 0 12px 0 0;
   text-transform: uppercase;
   color: #000000;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__text,
+  &:hover .copyright__icon {
+    color: #81b3d2;
+  }
+
+  &:active .copyright__text,
+  &:active .copyright__icon {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__icon {
