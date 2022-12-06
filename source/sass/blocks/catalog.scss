@@ -1,0 +1,43 @@
+@use "../mixins";
+
+.catalog {
+  padding: 38px 20px 25px;
+}
+
+.catalog__header {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 3;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.catalog__description {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 37px;
+}
+
+.catalog__list {
+  @include mixins.normalize-list;
+  padding-top: 24px;
+}
