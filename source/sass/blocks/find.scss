@@ -1,6 +1,9 @@
 .find {
   padding: 39px 18px 49px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .find__title {

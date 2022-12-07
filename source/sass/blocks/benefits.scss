@@ -4,6 +4,9 @@
   @include mixins.normalize-list;
   background-color: #ffffff;
   padding: 23px 18px 46px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .benefits__item:not(:last-child) {
