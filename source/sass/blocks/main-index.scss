@@ -1,5 +1,8 @@
 .main-index {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .main-index__header {

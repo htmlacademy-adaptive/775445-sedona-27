@@ -1,5 +1,11 @@
 @use "../mixins";
 
+.advantages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .advantages__slogan {
   font-weight: 700;
   font-size: 18px;

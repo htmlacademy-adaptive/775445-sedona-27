@@ -1,5 +1,8 @@
 .main-inner {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .main-inner__header {
