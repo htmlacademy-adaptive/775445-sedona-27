@@ -1,0 +1,50 @@
+@use "../mixins";
+
+.form {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: auto;
+}
+
+.form__group {
+  position: relative;
+  margin: 0;
+  padding: 0 0 39px 0;
+  border: 0 none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 3;
+  }
+}
+
+.form__title {
+  margin: 0 0 19px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.form__fields-list {
+  @include mixins.normalize-list;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 80px 80px 80px;
+  grid-row-gap: 15px;
+}
+
+.form__field-item {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 21px 58px;
+}

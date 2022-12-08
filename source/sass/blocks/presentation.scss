@@ -1,0 +1,27 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 17px 20px 0;
+  margin-bottom: 10px;
+}
+
+.presentation__title {
+  margin: 0 0 27px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.presentation__br {
+  display: inline;
+}
+
+.presentation__description {
+  margin: 0 0 38px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
