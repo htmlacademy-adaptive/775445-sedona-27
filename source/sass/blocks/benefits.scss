@@ -1,9 +1,8 @@
-@use "../mixins";
-
 .benefits {
-  @include mixins.normalize-list;
-  background-color: #ffffff;
+  list-style: none;
+  margin: 0;
   padding: 23px 18px 46px;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

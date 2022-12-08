@@ -1,13 +1,11 @@
-@use "../mixins";
-
-.catalog {
-  padding: 38px 20px 0;
+.feedback {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 38px 20px 0;
 }
 
-.catalog__header {
+.feedback__header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,7 +23,7 @@
   }
 }
 
-.catalog__title {
+.feedback__title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -33,20 +31,12 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
 
-.catalog__description {
+.feedback__description {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-bottom: 37px;
-}
-
-.catalog__list {
-  display: grid;
-  grid-template-columns: 280px;
-  grid-template-rows: auto;
-
-  @include mixins.normalize-list;
+  padding-bottom: 29px;
 }
