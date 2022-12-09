@@ -1,3 +1,45 @@
+.field-text {
+  &--phone,
+  &--email {
+    position: relative;
+  }
+
+  &--phone::before,
+  &--email::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    right: 0;
+    top: 21px;
+    z-index: 1;
+  }
+
+  &--phone::after,
+  &--email::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+  }
+
+  &--phone::after {
+    top: 41px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email::after {
+    top: 44px;
+    right: 21px;
+    width: 16px;
+    height: 12px;
+    background-image: url("../img/mail.svg");
+  }
+}
+
 .field-text__label {
   text-transform: uppercase;
   padding-left: 16px;
@@ -13,6 +55,7 @@
   font-family: inherit;
   border: 4px solid transparent;
 
+
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -21,7 +64,8 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
     outline: none;
