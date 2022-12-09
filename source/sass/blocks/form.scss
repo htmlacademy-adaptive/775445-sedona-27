@@ -29,6 +29,10 @@
   &--contacts {
     padding: 0 0 34px 0;
   }
+
+  &--impression {
+    padding: 0 0 23px 0;
+  }
 }
 
 .form__title {
@@ -42,12 +46,15 @@
   padding: 25px 0 0 0;
 }
 
-.form__fields-list {
+.form__fields-list,
+.form__radio-list {
   @include mixins.normalize-list;
   display: grid;
   grid-template-columns: 280px;
   grid-row-gap: 15px;
+}
 
+.form__fields-list {
   &--who {
     grid-template-rows: 80px 80px 80px;
   }
@@ -55,10 +62,23 @@
   &--contacts {
     grid-template-rows: 80px 80px;
   }
+
+  &--impression {
+    grid-template-rows: 47px 47px 47px;
+    padding-top: 1px;
+  }
 }
+
 
 .form__field-item {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: 21px 58px;
+}
+
+.form__radio-item {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 46px;
+  align-items: center;
 }
