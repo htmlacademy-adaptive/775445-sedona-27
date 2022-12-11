@@ -1,0 +1,10 @@
+@mixin normalize-image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@mixin normalize-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

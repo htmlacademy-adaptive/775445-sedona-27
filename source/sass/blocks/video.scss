@@ -1,0 +1,25 @@
+.video {
+  position: relative;
+  width: 280px;
+  height: 177px;
+}
+
+.video__box {
+  display: block;
+  cursor: pointer;
+}
+
+.video__button {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: none;
+  padding: 0;
+}

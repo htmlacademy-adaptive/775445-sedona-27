@@ -1,0 +1,45 @@
+@use "../mixins";
+
+.advantage-main {
+  background-color: #81b3d2;
+
+  &:first-child .advantage-main__title {
+    padding: 34px 8px 0;
+    margin-bottom: 11px;
+  }
+
+  &:first-child .advantage-main__description {
+    padding: 0 8px 39px;
+  }
+}
+
+.advantage-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.advantage-main__title {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding: 38px 8px 11px;
+}
+
+.advantage-main__description {
+  margin: 0;
+  padding: 0 8px 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantage-main__image {
+  @include mixins.normalize-image;
+}

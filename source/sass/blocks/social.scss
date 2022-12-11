@@ -1,0 +1,47 @@
+@use "../mixins";
+
+.social {
+  width: 156px;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mixins.normalize-list;
+}
+
+.social__item {
+  margin-bottom: 6px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 6px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon {
+  display: block;
+  color: #ffffff;
+}

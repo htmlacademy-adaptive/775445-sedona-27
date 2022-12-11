@@ -1,0 +1,24 @@
+.find {
+  padding: 39px 18px 49px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.find__title {
+  margin: 0 0 20px 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.find__description {
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+}
+
+.find__button {
+  width: 284px;
+}

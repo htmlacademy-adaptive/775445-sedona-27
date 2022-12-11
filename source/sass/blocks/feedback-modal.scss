@@ -1,0 +1,41 @@
+.feedback-modal {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  position: relative;
+  margin: auto;
+  padding: 40px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.feedback-modal__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  text-align: center;
+}
+
+.feedback-modal__description {
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-modal__button-wrapper {
+  width: 320px;
+  padding: 20px;
+  margin: 0 -20px -20px;
+  background-color: #f2f2f2;
+}
+
+.feedback-modal__button {
+  width: 280px;
+  font-size: 18px;
+  align-self: center;
+}

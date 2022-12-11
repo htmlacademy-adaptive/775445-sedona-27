@@ -1,0 +1,42 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 38px 20px 0;
+}
+
+.feedback__header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 3;
+  }
+}
+
+.feedback__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.feedback__description {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 29px;
+}

@@ -1,0 +1,72 @@
+@use "../mixins";
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 34px 18px 17px;
+}
+
+.advantages__intro {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 19px 18px 16px;
+}
+
+.advantages__br {
+  display: inline;
+}
+
+.advantages__list {
+  @include mixins.normalize-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    padding-top: 36px;
+  }
+
+  &:first-child::before {
+    position: absolute;
+    content: url("../img/divider-mobile-advantages.svg");
+    left: 0;
+    top: -1px;
+  }
+
+  &--underline:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    left: 18px;
+    bottom: 1px;
+    width: 284px;
+    height: 1px;
+    background-color: #d6d6d6;
+    z-index: 3;
+  }
+}
+
+.advantages__number {
+  margin: 0 0 17px 0;
+  text-align: center;
+
+  &--primary-color {
+    color: #ffffff;
+  }
+}

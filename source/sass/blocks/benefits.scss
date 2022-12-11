@@ -1,0 +1,13 @@
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding: 23px 18px 46px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 25px;
+}
