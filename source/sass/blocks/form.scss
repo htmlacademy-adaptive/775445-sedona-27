@@ -26,14 +26,18 @@
     padding: 0 0 39px 0;
   }
 
-  &--contacts {
+  &--contacts,
+  &--feelings {
     padding: 0 0 34px 0;
   }
 
   &--impression,
-  &--attractions,
-  &--feelings {
+  &--attractions {
     padding: 0 0 23px 0;
+  }
+
+  &--feelings::after {
+    display: none;
   }
 }
 
@@ -46,6 +50,16 @@
   text-transform: uppercase;
   text-align: center;
   padding: 25px 0 0 0;
+}
+
+.form__feelings-wrapper {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: auto 58px 24px;
+}
+
+.form_textarea {
+  margin-bottom: 56px;
 }
 
 .form__list {
@@ -84,4 +98,19 @@
   grid-template-columns: 280px;
   grid-template-rows: 46px;
   align-items: center;
+}
+
+.form__desc {
+  text-align: right;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-right: 2px;
+
+  .form__sup {
+    line-height: 0;
+    position: relative;
+    top: 4px;
+  }
 }

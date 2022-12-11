@@ -150,14 +150,13 @@
           </fieldset>
           <fieldset class="form__group form__group--feelings">
             <legend class="form__title">Опишите свои эмоции:</legend>
-            <div class="form__textarea-item textarea">
-              <label class="textarea__label">
-                <textarea class="textarea__text" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
-              </label>
-            </div>
-            <div class="form__button-wrapper">
+            <div class="form__feelings-wrapper">
+              <div class="form_textarea textarea">
+                <label class="textarea__label" for="feedback-text"></label>
+                <textarea class="textarea__text" id="feedback-text" name="feedback-text" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
               <button class="form__button button" type="submit">Отправить отзыв</button>
-              <span class="form__desc"><sup>*</sup> — обязательные поля</span>
+              <div class="form__desc"><sup class="form__sup">*</sup> — обязательные поля</div>
             </div>
           </fieldset>
         </form>
