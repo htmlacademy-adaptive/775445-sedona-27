@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона - Ильичев Евгений</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css?ver=4">
+  <link rel="stylesheet" href="css/style.css?ver=6">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body class="page__body">
@@ -151,7 +151,7 @@
           <fieldset class="form__group form__group--feelings">
             <legend class="form__title">Опишите свои эмоции:</legend>
             <div class="form__feelings-wrapper">
-              <div class="form_textarea textarea">
+              <div class="form__textarea textarea">
                 <label class="textarea__label" for="feedback-text"></label>
                 <textarea class="textarea__text" id="feedback-text" name="feedback-text" placeholder="Опишите подробно все свои восторги" oninput="setHeight('.textarea__text');"></textarea>
               </div>
@@ -209,18 +209,18 @@
     </footer>
   </div>
   <div class="page__modal-container-mistake page__modal-container-mistake--close">
-    <div class="page__mistake-modal modal">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button" type="button">OK</button>
+    <div class="mistake-modal">
+      <h2 class="mistake-modal__title">Что-то пошло не так!</h2>
+      <p class="mistake-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="mistake-modal__button button" type="button">OK</button>
     </div>
   </div>
   <div class="page__modal-container-feedback page__modal-container-feedback--close">
-    <div class="page__feedback-modal modal">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="modal__button-wrapper">
-        <button class="modal__button button" type="button">Закрыть окно</button>
+    <div class="feedback-modal">
+      <h2 class="feedback-modal__title">Ваш отзыв отправлен!</h2>
+      <p class="feedback-modal__description">Спасибо за ваше участие, ваш<br class="feedback-modal__br">отзыв уже поступил к нам.<br class="feedback-modal__br">В ближайшее время мы<br class="feedback-modal__br">опубликуем его на сайте.</p>
+      <div class="feedback-modal__button-wrapper">
+        <button class="feedback-modal__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>
