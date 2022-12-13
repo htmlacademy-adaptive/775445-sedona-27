@@ -1,13 +1,26 @@
+@use "../variables" as *;
+
 .hero-inner {
   color: #ffffff;
   background-color: rgba(131, 179, 211, 0.7);
   background-size: auto, cover;
   background-repeat: no-repeat, no-repeat;
-  background-image: url("../img/divider-mobile.svg"), url("../img/welcome-backgound-inner-mobile.jpg");
+  background-image: url("../img/divider-mobile.svg"), url("../img/welcome-bg-inner-mobile.jpg");
   background-position: bottom, bottom;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/divider-tablet.svg"), url("../img/welcome-bg-inner-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/divider-desktop.svg"), url("../img/welcome-bg-inner-desktop.jpg");
+  }
 }
 
 .hero-inner__image {
   display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   margin: 0 auto;
 }

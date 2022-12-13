@@ -51,7 +51,11 @@
       <h1 class="visually-hidden">Сайт поиска гостиниц "Седона"</h1>
       <header class="main-index__header hero-index">
         <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
-        <img class="hero-index__image" src="img/welcome-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/welcome-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/welcome-tablet.svg">
+          <img class="hero-index__image" src="img/welcome-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        </picture>
       </header>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>

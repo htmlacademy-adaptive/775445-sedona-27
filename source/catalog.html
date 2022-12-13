@@ -51,7 +51,11 @@
       <h1 class="visually-hidden">Сайт поиска гостиниц "Седона"</h1>
       <header class="main-inner__header hero-inner">
         <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
-        <img class="hero-inner__image" src="img/welcome-inner-mobile.svg" width="229" height="39" alt="Седона.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/welcome-inner-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/welcome-inner-tablet.svg">
+          <img class="hero-inner__image" src="img/welcome-inner-mobile.svg" width="229" height="39" alt="Седона.">
+        </picture>
       </header>
       <section class="catalog">
         <header class="catalog__header">
