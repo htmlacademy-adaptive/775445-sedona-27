@@ -1,4 +1,5 @@
 @use "../mixins";
+@use "../variables" as *;
 
 .advantages {
   display: flex;
@@ -15,6 +16,16 @@
   text-align: center;
   margin: 0;
   padding: 34px 18px 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 49px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+  }
 }
 
 .advantages__intro {
@@ -26,6 +37,10 @@
 
 .advantages__br {
   display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__list {
@@ -38,6 +53,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   &:first-child {
     padding-top: 36px;
@@ -59,6 +75,18 @@
     height: 1px;
     background-color: #d6d6d6;
     z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
   }
 }
 

@@ -1,5 +1,11 @@
+@use "../variables" as *;
+
 .benefit-card {
   padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
 .benefit-card__title {

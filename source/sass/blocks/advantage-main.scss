@@ -1,4 +1,5 @@
 @use "../mixins";
+@use "../variables" as *;
 
 .advantage-main {
   background-color: #81b3d2;
@@ -13,10 +14,14 @@
   }
 }
 
-.advantage-main__wrapper {
+.advantage-main__card-wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
 .advantage-main__title {
@@ -40,6 +45,15 @@
   color: #ffffff;
 }
 
+.advantage-main__picture-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+}
+
 .advantage-main__image {
   @include mixins.normalize-image;
+  display: block;
+  width: auto;
+  height: auto;
 }

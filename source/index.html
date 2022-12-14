@@ -59,16 +59,22 @@
       </header>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages__slogan">Седона — небольшой<br class="advantages__br">городок в Аризоне<br class="advantages__br">заслуживающий большего!</p>
+        <p class="advantages__slogan">Седона — небольшой<br class="advantages__br"> городок в Аризоне,<br> заслуживающий большего!</p>
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages__list">
           <li class="advantages__item advantage-main">
-            <div class="advantage-main__wrapper">
+            <div class="advantage-main__card-wrapper">
               <h3 class="advantage-main__title">Настоящий городок</h3>
               <p class="advantages__number advantages__number--primary-color">— №1 —</p>
               <p class="advantage-main__description">Седона не аттракцион для туристов,<br class="advantages__br">там течет своя жизнь</p>
             </div>
-            <img class="advantage-main__image" src="img/sedona-mobile.jpg" width="320" height="260" alt="Город Седона.">
+            <div class="advantage-main__picture-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sedona-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/sedona-tablet.jpg">
+                <img class="advantage-main__image" src="img/sedona-mobile.jpg" width="320" height="260" alt="Город Седона.">
+              </picture>
+            </div>
             <ul class="benefits">
               <li class="benefits__item benefit-card">
                 <div class="benefit-card__wrapper">
@@ -91,12 +97,18 @@
             </ul>
           </li>
           <li class="advantages__item advantage-main">
-            <div class="advantage-main__wrapper">
+            <div class="advantage-main__card-wrapper">
               <h3 class="advantage-main__title">Там есть мост дьявола</h3>
               <p class="advantages__number advantages__number--primary-color">— №2 —</p>
               <p class="advantage-main__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantage-main__image" src="img/bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола в городе Седона.">
+            <div class="advantage-main__picture-wrapper">
+              <picture>
+<!--                <source media="(min-width: 1200px)" srcset="img/sedona-desktop.jpg">-->
+<!--                <source media="(min-width: 768px)" srcset="img/sedona-tablet.jpg">-->
+                <img class="advantage-main__image" src="img/bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола в городе Седона.">
+              </picture>
+            </div>
           </li>
           <li class="advantages__item advantage-additional advantages__item--underline">
             <div class="advantage-additional__wrapper">
