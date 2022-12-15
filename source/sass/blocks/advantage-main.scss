@@ -7,10 +7,19 @@
   &:first-child .advantage-main__title {
     padding: 34px 8px 0;
     margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      padding: 53px 23px 0;
+      margin-bottom: 13px;
+    }
   }
 
   &:first-child .advantage-main__description {
     padding: 0 8px 39px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 23px 30px;
+    }
   }
 }
 
@@ -35,6 +44,19 @@
   text-align: center;
   overflow-wrap: break-word;
   padding: 38px 8px 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding: 53px 23px 0;
+  }
+}
+
+.advantages-main__br {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantage-main__description {

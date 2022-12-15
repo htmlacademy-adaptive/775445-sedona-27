@@ -10,10 +10,15 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     flex-direction: row;
   }
 }
 
 .benefits__item:not(:last-child) {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

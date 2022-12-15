@@ -33,6 +33,10 @@
   text-align: center;
   margin: 0;
   padding: 19px 18px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .advantages__br {
@@ -96,5 +100,9 @@
 
   &--primary-color {
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 }

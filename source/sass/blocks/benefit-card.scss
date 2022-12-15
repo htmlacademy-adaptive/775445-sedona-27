@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    padding-left: 0;
   }
 }
 
@@ -29,22 +30,65 @@
     content: url("../img/house-mobile.svg");
     top: 1px;
     left: -47px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/house-tablet.svg");
+      top: 59px;
+      left: 68px;
+    }
   }
 
   &--second-icon::after {
     content: url("../img/food-mobile.svg");
     top: 2px;
     left: -47px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/food-tablet.svg");
+      top: 61px;
+      left: 66px;
+    }
   }
 
   &--third-icon::after {
     content: url("../img/gift-mobile.svg");
     top: 1px;
     left: -43px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/gift-tablet.svg");
+      top: 63px;
+      left: 77px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 158px;
+    padding-bottom: 23px;
+    text-align: center;
   }
 }
 
 .benefit-card__description {
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.benefit-card__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.benefit-card__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 60px;
+  }
 }
