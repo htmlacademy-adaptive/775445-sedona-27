@@ -1,16 +1,30 @@
+@use "../variables" as *;
+
 .advantage-additional {
   background-color: #eeeeee;
 
   &:last-child .advantage-additional__wrapper {
     padding-bottom: 28px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:last-child .advantage-additional__wrapper {
+      padding-bottom: 44px;
+    }
+  }
 }
 
 .advantage-additional__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  justify-content: center;
   padding: 26px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 43px 28px 44px;
+  }
 }
 
 .advantage-additional__title {
@@ -23,6 +37,27 @@
   color: #000000;
   text-align: center;
   overflow-wrap: break-word;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantage-additional__br {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantage-additional__br-reverse {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .advantage-additional__description {

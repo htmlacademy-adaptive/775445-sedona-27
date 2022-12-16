@@ -80,6 +80,14 @@
 }
 
 .benefit-card__br {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.benefit-card__br-reverse {
   display: none;
 
   @media (min-width: $tablet-width) {
