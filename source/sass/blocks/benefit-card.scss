@@ -34,7 +34,7 @@
     @media (min-width: $tablet-width) {
       content: url("../img/house-tablet.svg");
       top: 59px;
-      left: 68px;
+      left: 65px;
     }
   }
 
@@ -46,7 +46,7 @@
     @media (min-width: $tablet-width) {
       content: url("../img/food-tablet.svg");
       top: 61px;
-      left: 66px;
+      left: 63px;
     }
   }
 
@@ -58,7 +58,7 @@
     @media (min-width: $tablet-width) {
       content: url("../img/gift-tablet.svg");
       top: 63px;
-      left: 77px;
+      left: 74px;
     }
   }
 
@@ -79,24 +79,8 @@
   }
 }
 
-.benefit-card__br {
-  display: inline;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.benefit-card__br-reverse {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-}
-
 .benefit-card__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 20px 60px;
+    padding: 0 23px 60px;
   }
 }
