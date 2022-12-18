@@ -23,7 +23,18 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    min-height: 256px;
     padding: 43px 28px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 63px 28px 44px;
+    justify-content: flex-start;
+
+    &--diff {
+      padding-top: 53px;
+    }
   }
 }
 

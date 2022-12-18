@@ -7,6 +7,11 @@
     width: 256px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding-left: 0;
+  }
 }
 
 .benefit-card__title {
@@ -36,6 +41,12 @@
       top: 59px;
       left: 65px;
     }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/house-desktop.svg");
+      top: 69px;
+      left: 136px;
+    }
   }
 
   &--second-icon::after {
@@ -47,6 +58,12 @@
       content: url("../img/food-tablet.svg");
       top: 61px;
       left: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/food-desktop.svg");
+      top: 72px;
+      left: 138px;
     }
   }
 
@@ -60,6 +77,12 @@
       top: 63px;
       left: 74px;
     }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/gift-desktop.svg");
+      top: 69px;
+      left: 136px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -67,6 +90,10 @@
     padding-top: 158px;
     padding-bottom: 23px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 170px;
   }
 }
 
@@ -82,5 +109,9 @@
 .benefit-card__wrapper {
   @media (min-width: $tablet-width) {
     padding: 0 23px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 23px 69px;
   }
 }

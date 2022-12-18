@@ -25,6 +25,10 @@
     margin-top: 14px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+  }
 }
 
 .main-footer__social {
@@ -39,5 +43,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 7px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 7px 60px 0 0;
   }
 }

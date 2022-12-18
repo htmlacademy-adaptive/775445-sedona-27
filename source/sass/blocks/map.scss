@@ -26,8 +26,13 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 350px;
     background-image: url("../img/map-tablet.png");
     background-size: 768px 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background-image: url("../img/map-desktop.png");
+    background-size: 1200px 350px;
   }
 }
