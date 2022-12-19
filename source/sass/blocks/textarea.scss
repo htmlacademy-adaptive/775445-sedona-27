@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .textarea__text {
   resize: none;
   display: block;
@@ -25,5 +27,9 @@
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
     outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
   }
 }

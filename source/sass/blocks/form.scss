@@ -1,14 +1,21 @@
 @use "../mixins";
+@use "../variables" as *;
 
 .form {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 280px 280px;
+    grid-column-gap: 88px;
+    margin: 0 auto;
+  }
 }
 
 .form__group {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   border: 0 none;
 
   &::after {
@@ -26,18 +33,33 @@
     padding: 0 0 39px 0;
   }
 
-  &--contacts,
-  &--feelings {
+  &--contacts {
     padding: 0 0 34px 0;
   }
 
-  &--impression,
+  &--feelings {
+    padding: 0 0 14px 0;
+    grid-column: 1 / -1;
+  }
+
+  &--impression {
+    padding: 0 0 23px 0;
+    grid-column: 1 / -1;
+  }
+
   &--attractions {
     padding: 0 0 23px 0;
+    grid-column: 1 / -1;
   }
 
   &--feelings::after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -50,16 +72,41 @@
   text-transform: uppercase;
   text-align: center;
   padding: 25px 0 0 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 74px;
+    margin-bottom: 27px;
+
+    &--align-who {
+      margin-left: 21px;
+    }
+
+    &--align-contacts {
+      margin-left: -19px;
+    }
+  }
 }
 
 .form__feelings-wrapper {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto 58px 24px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 192px;
+    grid-template-rows: auto 58px;
+    grid-column-gap: 132px;
+  }
 }
 
 .form__textarea {
   margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .form__list {
@@ -84,6 +131,20 @@
   &--attractions {
     grid-template-rows: repeat(4, 47px);
     padding-top: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--impression {
+      grid-template-columns: 280px 280px;
+      grid-template-rows: repeat(2, 47px);
+      grid-column-gap: 16px;
+    }
+
+    &--attractions {
+      grid-template-columns: 280px 280px;
+      grid-template-rows: repeat(2, 47px);
+      grid-column-gap: 16px;
+    }
   }
 }
 
