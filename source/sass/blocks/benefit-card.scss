@@ -1,5 +1,17 @@
+@use "../variables" as *;
+
 .benefit-card {
   padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding-left: 0;
+  }
 }
 
 .benefit-card__title {
@@ -23,22 +35,83 @@
     content: url("../img/house-mobile.svg");
     top: 1px;
     left: -47px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/house-tablet.svg");
+      top: 59px;
+      left: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/house-desktop.svg");
+      top: 69px;
+      left: 136px;
+    }
   }
 
   &--second-icon::after {
     content: url("../img/food-mobile.svg");
     top: 2px;
     left: -47px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/food-tablet.svg");
+      top: 61px;
+      left: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/food-desktop.svg");
+      top: 72px;
+      left: 138px;
+    }
   }
 
   &--third-icon::after {
     content: url("../img/gift-mobile.svg");
     top: 1px;
     left: -43px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/gift-tablet.svg");
+      top: 63px;
+      left: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/gift-desktop.svg");
+      top: 69px;
+      left: 136px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 158px;
+    padding-bottom: 23px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 170px;
   }
 }
 
 .benefit-card__description {
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.benefit-card__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 23px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 23px 69px;
+  }
 }

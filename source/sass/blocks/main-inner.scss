@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .main-inner {
   flex-grow: 1;
   display: flex;
@@ -8,4 +10,14 @@
 .main-inner__header {
   padding-top: 52px;
   padding-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 120px;
+  }
 }

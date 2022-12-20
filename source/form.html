@@ -5,8 +5,8 @@
   <title>HTML Academy: Седона - Ильичев Евгений</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css?ver=6">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css?ver=11">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="page__body">
   <div class="page__container">
@@ -41,7 +41,7 @@
               <a class="main-nav__link main-nav__link--active" href="#">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
             </li>
           </ul>
         </div>
@@ -51,16 +51,20 @@
       <h1 class="visually-hidden">Сайт поиска гостиниц "Седона"</h1>
       <header class="main-inner__header hero-inner">
         <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
-        <img class="hero-inner__image" src="img/welcome-inner-mobile.svg" width="229" height="39" alt="Седона.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/welcome-inner-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/welcome-inner-tablet.svg">
+          <img class="hero-inner__image" src="img/welcome-inner-mobile.svg" width="229" height="39" alt="Седона.">
+        </picture>
       </header>
       <section class="feedback">
         <header class="feedback__header">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
-          <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br class="breaker breaker--on-on"> а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form__group--who">
-            <legend class="form__title">Представьтесь:</legend>
+            <legend class="form__title form__title--align-who">Представьтесь:</legend>
             <ul class="form__list form__list--who">
               <li class="form__field-item field-text">
                 <label class="field-text__label" for="user-firstname">Имя*:</label>
@@ -77,7 +81,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--contacts">
-            <legend class="form__title">Контактная информация:</legend>
+            <legend class="form__title form__title--align-contacts">Контактная информация:</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__field-item field-text field-text--phone">
                 <label class="field-text__label" for="user-phone">Контактный телефон*:</label>
@@ -167,7 +171,7 @@
         <div class="main-footer__contacts contacts">
           <p class="contacts__text">#visitSEDONA</p>
         </div>
-        <section class="social">
+        <section class="main-footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -224,6 +228,6 @@
       </div>
     </div>
   </div>
-  <script src="js/index.js?ver=1"></script>
+  <script src="js/index.js?ver=2"></script>
 </body>
 </html>

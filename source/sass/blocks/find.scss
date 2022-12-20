@@ -1,9 +1,21 @@
+@use "../variables" as *;
+
 .find {
   padding: 39px 18px 49px;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .find__title {
@@ -12,13 +24,30 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .find__description {
   margin: 0 0 32px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .find__button {
   width: 284px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

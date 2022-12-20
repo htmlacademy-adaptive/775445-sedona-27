@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .map {
   position: relative;
   width: 320px;
@@ -8,7 +10,6 @@
   background-position: center;
   max-width: 100%;
   z-index: 0;
-  margin-bottom: 20px;
 
   &::before {
     position: absolute;
@@ -21,5 +22,17 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background-image: url("../img/map-tablet.png");
+    background-size: 768px 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background-image: url("../img/map-desktop.png");
+    background-size: 1200px 350px;
   }
 }

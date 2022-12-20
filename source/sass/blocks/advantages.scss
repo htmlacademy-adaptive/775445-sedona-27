@@ -1,4 +1,5 @@
 @use "../mixins";
+@use "../variables" as *;
 
 .advantages {
   display: flex;
@@ -15,6 +16,16 @@
   text-align: center;
   margin: 0;
   padding: 34px 18px 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 49px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+  }
 }
 
 .advantages__intro {
@@ -22,22 +33,33 @@
   text-align: center;
   margin: 0;
   padding: 19px 18px 16px;
-}
 
-.advantages__br {
-  display: inline;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .advantages__list {
   @include mixins.normalize-list;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 .advantages__item {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   &:first-child {
     padding-top: 36px;
@@ -60,6 +82,49 @@
     background-color: #d6d6d6;
     z-index: 3;
   }
+
+  &--first {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+
+  &--second {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  &--third {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  &--fourth {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  &--fifth {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--underline::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+  }
 }
 
 .advantages__number {
@@ -68,5 +133,9 @@
 
   &--primary-color {
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 }

@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+.breaker {
+  display: none;
+
+  &--on-on {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
+  &--on-off {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--off-on {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+}
