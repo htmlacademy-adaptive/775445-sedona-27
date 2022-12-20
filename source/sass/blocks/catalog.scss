@@ -1,3 +1,4 @@
+@use "../variables" as *;
 @use "../mixins";
 
 .catalog {
@@ -5,6 +6,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .catalog__header {
@@ -23,6 +29,18 @@
     background-color: #e5e5e5;
     z-index: 3;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .catalog__title {
@@ -33,14 +51,31 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 25px;
+  padding: 0 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding: 28px 20px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 20px 32px;
+  }
 }
 
 .catalog__description {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-bottom: 37px;
+  padding: 0 20px 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 89px;
+  }
 }
 
 .catalog__list {
@@ -49,4 +84,19 @@
   grid-template-rows: auto;
 
   @include mixins.normalize-list;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.catalog__item {
+  &:first-child {
+    grid-column: 1 / -1;
+  }
 }
