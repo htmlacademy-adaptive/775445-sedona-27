@@ -14,16 +14,23 @@
     flex-direction: row;
     align-items: normal;
     justify-content: space-between;
+
+    &--inner {
+      padding-right: 60px;
+    }
   }
 }
 
 .main-footer__contacts {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 14px;
-    margin-bottom: 0;
+    margin: 14px 0 0 0;
+
+    &--inner {
+      margin: 13px 0 0 1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +41,10 @@
 .main-footer__social {
   @media (min-width: $tablet-width) {
     margin: 0 0 0 12px;
+
+    &--inner {
+      margin: 0 0 0 -9px;
+    }
   }
 }
 

@@ -11,6 +11,12 @@
     grid-column-gap: 88px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 430px 402px;
+    grid-column-gap: 128px;
+    margin: 0 auto;
+  }
 }
 
 .form__group {
@@ -61,6 +67,12 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--contacts {
+      padding-bottom: 39px;
+    }
+  }
 }
 
 .form__title {
@@ -79,12 +91,42 @@
     padding-top: 74px;
     margin-bottom: 27px;
 
-    &--align-who {
+    &--who {
       margin-left: 21px;
     }
 
-    &--align-contacts {
+    &--contacts {
       margin-left: -19px;
+    }
+
+    &--impression {
+      padding-top: 24px;
+    }
+
+    &--attractions {
+      padding-top: 24px;
+      margin-bottom: 28px;
+    }
+
+    &--feelings {
+      padding-top: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
+
+    &--who {
+      margin-left: 32px;
+    }
+
+    &--contacts {
+      margin-left: -32px;
+    }
+
+    &--impression {
+      padding-top: 32px;
+      margin-bottom: 44px;
     }
   }
 }
@@ -106,6 +148,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    margin-bottom: 48px;
   }
 }
 
@@ -141,9 +184,34 @@
     }
 
     &--attractions {
-      grid-template-columns: 280px 280px;
+      grid-template-columns: 224px 224px;
       grid-template-rows: repeat(2, 47px);
-      grid-column-gap: 16px;
+      grid-column-gap: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--who {
+      grid-template-columns: 430px;
+
+      .form__field-item {
+        grid-template-columns: 430px;
+      }
+    }
+
+    &--contacts {
+      grid-template-columns: 402px;
+
+      .form__field-item {
+        grid-template-columns: 402px;
+      }
+    }
+
+    &--impression {
+      grid-template-columns: 280px 280px 280px;
+      grid-template-rows: 47px;
+      grid-column-gap: 28px;
+      margin-left: 41px;
     }
   }
 }
@@ -173,5 +241,11 @@
     line-height: 0;
     position: relative;
     top: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 0;
+    font-size: 14px;
   }
 }
