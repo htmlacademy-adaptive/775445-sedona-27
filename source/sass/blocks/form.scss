@@ -128,6 +128,15 @@
       padding-top: 32px;
       margin-bottom: 44px;
     }
+
+    &--attractions {
+      padding-top: 50px;
+      margin-bottom: 58px;
+    }
+
+    &--feelings {
+      padding-top: 63px;
+    }
   }
 }
 
@@ -140,6 +149,11 @@
     grid-template-columns: 324px 192px;
     grid-template-rows: auto 58px;
     grid-column-gap: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 384px 228px;
+    grid-column-gap: 156px;
   }
 }
 
@@ -213,6 +227,12 @@
       grid-column-gap: 28px;
       margin-left: 41px;
     }
+
+    &--attractions {
+      grid-template-columns: 173px 170px 153px 185px;
+      grid-template-rows: 47px;
+      grid-column-gap: 64px;
+    }
   }
 }
 
@@ -227,6 +247,24 @@
   grid-template-columns: 280px;
   grid-template-rows: 46px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    &--first-desktop {
+      grid-template-columns: 173px;
+    }
+
+    &--second-desktop {
+      grid-template-columns: 170px;
+    }
+
+    &--third-desktop {
+      grid-template-columns: 153px;
+    }
+
+    &--fourth-desktop {
+      grid-template-columns: 185px;
+    }
+  }
 }
 
 .form__desc {
