@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .mistake-modal {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,16 @@
   padding: 45px 41px 35px;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+  }
 }
 
 .mistake-modal__title {
@@ -17,16 +29,39 @@
   line-height: 26px;
   margin: 0 0 25px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .mistake-modal__description {
   text-transform: uppercase;
   margin: 0 0 28px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .mistake-modal__button {
   width: 180px;
   font-size: 18px;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+    font-size: 21px;
+  }
 }

@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .feedback-modal {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,16 @@
   padding: 40px 20px 20px;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    padding-top: 42px;
+  }
 }
 
 .feedback-modal__title {
@@ -17,14 +29,28 @@
   line-height: 26px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .feedback-modal__description {
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding: 25px 20px 50px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    margin-bottom: 2px;
+  }
 }
 
 .feedback-modal__button-wrapper {
@@ -32,10 +58,20 @@
   padding: 20px;
   margin: 0 -20px -20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
 }
 
 .feedback-modal__button {
   width: 280px;
   font-size: 18px;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    font-size: 21px;
+  }
 }

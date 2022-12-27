@@ -36,3 +36,11 @@
     background-size: 1200px 350px;
   }
 }
+
+.map__frame {
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
