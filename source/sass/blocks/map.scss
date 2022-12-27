@@ -39,6 +39,7 @@
 
 .map__frame {
   border: 0;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 100%;
