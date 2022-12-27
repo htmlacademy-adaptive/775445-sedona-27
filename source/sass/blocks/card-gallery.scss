@@ -21,10 +21,14 @@
     z-index: 3;
   }
 
+  &--first {
+    grid-column: 1 / -1;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px;
     grid-template-rows: 267px auto;
-    grid-row-gap: 22px;
+    grid-row-gap: 0;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -33,6 +37,11 @@
         width: 648px;
         height: 400px;
       }
+
+      .card-gallery__description {
+        padding: 22px 20px 15px 20px;
+      }
+
       grid-template-columns: 648px;
       grid-template-rows: 400px auto;
     }
@@ -52,6 +61,18 @@
       .card-gallery__image {
         width: 1200px;
         height: 400px;
+      }
+
+      .card-gallery__description {
+        padding: 22px 20px 11px 21px;
+      }
+
+      .card-gallery__like-wrapper {
+        padding-top: 6px;
+      }
+
+      .card-gallery__author {
+        padding-top: 1px;
       }
       grid-template-columns: 1200px;
       grid-template-rows: 400px auto;
@@ -83,8 +104,21 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 22px 20px 15px 20px;
+
+    &--mark {
+      background-color: #eaeaea;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: -84px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+    padding: 18px 20px 15px 25px;
   }
 }
 
@@ -95,15 +129,37 @@
   text-transform: uppercase;
   color: #000000;
   padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    color: #ffffff;
+  }
 }
 
 .card-gallery__author {
   margin: 0;
   padding-top: 1px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    padding-top: 4px;
+  }
 }
 
 .card-gallery__title-wrapper {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .card-gallery__like-wrapper {
@@ -111,6 +167,15 @@
   grid-template-columns: 23px auto;
   grid-template-rows: auto;
   grid-column-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    grid-column-gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .card-gallery__button {
@@ -118,9 +183,6 @@
   width: 23px;
   height: 21px;
   background-color: transparent;
-  background-image: url("../img/like.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
 
   &:hover,
   &:active,
@@ -129,9 +191,22 @@
   }
 }
 
+.card-gallery__like-icon {
+  display: block;
+  color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
 .card-gallery__like-count {
   margin: 0;
   padding-top: 5px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }

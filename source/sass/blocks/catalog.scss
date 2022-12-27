@@ -67,14 +67,14 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0 20px 37px;
+  padding: 0 0 37px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 81px;
+    padding: 0 18px 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 89px;
+    padding: 0 18px 89px;
   }
 }
 
@@ -92,11 +92,5 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 400px 400px 400px;
-  }
-}
-
-.catalog__item {
-  &:first-child {
-    grid-column: 1 / -1;
   }
 }

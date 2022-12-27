@@ -5,7 +5,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 17px 20px 0;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .presentation__title {
@@ -16,14 +16,15 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding: 28px 20px 32px;
+    padding: 39px 20px 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 20px 32px;
+    padding: 43px 20px 5px;
   }
 }
 
@@ -31,13 +32,13 @@
   margin: 0 0 38px 0;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 20px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 81px;
+    padding: 0 18px 51px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 89px;
+    padding: 0 18px 49px;
   }
 }

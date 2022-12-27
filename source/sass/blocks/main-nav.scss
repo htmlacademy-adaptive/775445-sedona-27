@@ -5,6 +5,21 @@
   display: flex;
   justify-content: flex-end;
   min-height: 56px;
+
+  &--nojs {
+    .main-nav__wrapper {
+      position: static;
+      display: block;
+    }
+
+    .main-nav__toggle-open {
+      display: none;
+    }
+
+    .main-nav__toggle-close {
+      display: none;
+    }
+  }
 }
 
 .main-nav__toggle-open {

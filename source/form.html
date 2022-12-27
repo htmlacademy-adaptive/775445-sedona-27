@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона - Ильичев Евгений</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css?ver=11">
+  <link rel="stylesheet" href="css/style.css?ver=14">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="page__body">
@@ -14,7 +14,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип сайта поиска гостиниц Седона.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle-open button" type="button">
           <svg class="main-nav__toggle-icon-open" aria-hidden="true" focusable="false" fill="currentColor" role="img" aria-label="Открыть меню" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9 0H0V4H22.9V0Z"/>
@@ -52,8 +52,8 @@
       <header class="main-inner__header hero-inner">
         <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/welcome-inner-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/welcome-inner-tablet.svg">
+          <source media="(min-width: 1200px)" width="460" height="80" srcset="img/welcome-inner-desktop.svg">
+          <source media="(min-width: 768px)" width="457" height="78" srcset="img/welcome-inner-tablet.svg">
           <img class="hero-inner__image" src="img/welcome-inner-mobile.svg" width="229" height="39" alt="Седона.">
         </picture>
       </header>
@@ -64,7 +64,7 @@
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form__group--who">
-            <legend class="form__title form__title--align-who">Представьтесь:</legend>
+            <legend class="form__title form__title--who">Представьтесь:</legend>
             <ul class="form__list form__list--who">
               <li class="form__field-item field-text">
                 <label class="field-text__label" for="user-firstname">Имя*:</label>
@@ -81,7 +81,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--contacts">
-            <legend class="form__title form__title--align-contacts">Контактная информация:</legend>
+            <legend class="form__title form__title--contacts">Контактная информация:</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__field-item field-text field-text--phone">
                 <label class="field-text__label" for="user-phone">Контактный телефон*:</label>
@@ -94,7 +94,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--impression">
-            <legend class="form__title">Ваше общее впечатление:</legend>
+            <legend class="form__title form__title--impression">Ваше общее впечатление:</legend>
             <ul class="form__list form__list--impression">
               <li class="form__control-item control">
                 <label class="control__label">
@@ -120,30 +120,30 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--attractions">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <legend class="form__title form__title--attractions">Посещенные<br class="breaker breaker--on-on"> достопримечательности:</legend>
             <ul class="form__list form__list--attractions">
-              <li class="form__control-item control">
+              <li class="form__control-item control form__control-item--first-tablet form__control-item--first-desktop">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked>
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="form__control-item control">
+              <li class="form__control-item control form__control-item--second-tablet form__control-item--second-desktop">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked>
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__control-item control">
+              <li class="form__control-item control form__control-item--third-tablet form__control-item--third-desktop">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked>
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Слайд-парк</span>
                 </label>
               </li>
-              <li class="form__control-item control">
+              <li class="form__control-item control form__control-item--fourth-tablet form__control-item--fourth-desktop">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
                   <span class="control__mark control__mark--checkbox"></span>
@@ -153,7 +153,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--feelings">
-            <legend class="form__title">Опишите свои эмоции:</legend>
+            <legend class="form__title form__title--feelings">Опишите свои эмоции:</legend>
             <div class="form__feelings-wrapper">
               <div class="form__textarea textarea">
                 <label class="textarea__label" for="feedback-text"></label>
@@ -167,11 +167,11 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
+      <div class="main-footer__wrapper main-footer__wrapper--inner">
+        <div class="main-footer__contacts contacts main-footer__contacts--inner">
           <p class="contacts__text">#visitSEDONA</p>
         </div>
-        <section class="main-footer__social social">
+        <section class="main-footer__social social main-footer__social--inner">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -214,7 +214,7 @@
   </div>
   <div class="page__modal-container-mistake page__modal-container-mistake--close">
     <div class="mistake-modal">
-      <h2 class="mistake-modal__title">Что-то пошло не так!</h2>
+      <h2 class="mistake-modal__title">Что-то пошло<br class="breaker breaker--on-on"> не так!</h2>
       <p class="mistake-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="mistake-modal__button button" type="button">OK</button>
     </div>
@@ -222,12 +222,12 @@
   <div class="page__modal-container-feedback page__modal-container-feedback--close">
     <div class="feedback-modal">
       <h2 class="feedback-modal__title">Ваш отзыв отправлен!</h2>
-      <p class="feedback-modal__description">Спасибо за ваше участие, ваш<br class="feedback-modal__br">отзыв уже поступил к нам.<br class="feedback-modal__br">В ближайшее время мы<br class="feedback-modal__br">опубликуем его на сайте.</p>
+      <p class="feedback-modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br class="breaker breaker--on-on"> В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
       <div class="feedback-modal__button-wrapper">
         <button class="feedback-modal__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>
-  <script src="js/index.js?ver=2"></script>
+  <script src="js/index.js?ver=5"></script>
 </body>
 </html>
