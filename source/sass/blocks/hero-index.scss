@@ -9,12 +9,24 @@
   background-image: url("../img/divider-mobile.svg"), url("../img/welcome-background-mobile.jpg");
   background-position: bottom, top;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/divider-mobile.svg"), url("../img/welcome-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/divider-tablet.svg"), url("../img/welcome-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-tablet.svg"), url("../img/welcome-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/divider-desktop.svg"), url("../img/welcome-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-desktop.svg"), url("../img/welcome-background-desktop@2x.jpg");
+    }
   }
 }
 

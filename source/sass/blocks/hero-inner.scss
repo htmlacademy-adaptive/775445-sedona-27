@@ -8,12 +8,24 @@
   background-image: url("../img/divider-mobile.svg"), url("../img/welcome-bg-inner-mobile.jpg");
   background-position: bottom, bottom;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/divider-mobile.svg"), url("../img/welcome-bg-inner-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/divider-tablet.svg"), url("../img/welcome-bg-inner-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-tablet.svg"), url("../img/welcome-bg-inner-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/divider-desktop.svg"), url("../img/welcome-bg-inner-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-desktop.svg"), url("../img/welcome-bg-inner-desktop@2x.jpg");
+    }
   }
 }
 
