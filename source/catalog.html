@@ -7,7 +7,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css?ver=16">
+  <link rel="stylesheet" href="css/style.min.css?ver=17">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="page__body">
@@ -60,12 +60,15 @@
       <section class="catalog">
         <header class="catalog__header">
           <h2 class="catalog__title">Фото и видео</h2>
-          <p class="catalog__description">Не можете решиться на путешествие из-за курса?<br class="breaker breaker--on-on">&ensp;Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="catalog__description">Не можете решиться на путешествие из-за курса?<br class="breaker breaker--on-on"> Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="catalog__list">
           <li class="catalog__item card-gallery card-gallery--first">
             <a class="card-gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-1-desktop.webp 1x, ./img/gallery/gallery-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-1-tablet.webp 1x, ./img/gallery/gallery-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/gallery-1-mobile.webp 1x, ./img/gallery/gallery-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="1200" height="400" srcset="img/gallery/gallery-1-desktop.jpg 1x, img/gallery/gallery-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="648" height="400" srcset="img/gallery/gallery-1-tablet.jpg 1x, img/gallery/gallery-1-tablet@2x.jpg 2x">
                 <img class="card-gallery__image" src="img/gallery/gallery-1-mobile.jpg" srcset="img/gallery/gallery-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога которая ведет в мечту">
@@ -90,6 +93,9 @@
           <li class="catalog__item card-gallery">
             <a class="card-gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-2-desktop.webp 1x, ./img/gallery/gallery-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-2-tablet.webp 1x, ./img/gallery/gallery-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/gallery-2-mobile.webp 1x, ./img/gallery/gallery-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="400" height="267" srcset="img/gallery/gallery-2-desktop.jpg 1x, img/gallery/gallery-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="324" height="267" srcset="img/gallery/gallery-2-tablet.jpg 1x, img/gallery/gallery-2-tablet@2x.jpg 2x">
                 <img class="card-gallery__image" src="img/gallery/gallery-2-mobile.jpg" srcset="img/gallery/gallery-2-mobile@2x.jpg 2x" width="280" height="280" alt="Редкое растение в Седоне">
@@ -114,6 +120,9 @@
           <li class="catalog__item card-gallery">
             <a class="card-gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-3-desktop.webp 1x, ./img/gallery/gallery-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-3-tablet.webp 1x, ./img/gallery/gallery-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/gallery-3-mobile.webp 1x, ./img/gallery/gallery-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="400" height="267" srcset="img/gallery/gallery-3-desktop.jpg 1x, img/gallery/gallery-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="324" height="267" srcset="img/gallery/gallery-3-tablet.jpg 1x, img/gallery/gallery-3-tablet@2x.jpg 2x">
                 <img class="card-gallery__image" src="img/gallery/gallery-3-mobile.jpg" srcset="img/gallery/gallery-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горный серпантин">
@@ -138,6 +147,9 @@
           <li class="catalog__item card-gallery">
             <a class="card-gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-4-desktop.webp 1x, ./img/gallery/gallery-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-4-tablet.webp 1x, ./img/gallery/gallery-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/gallery-4-mobile.webp 1x, ./img/gallery/gallery-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="400" height="267" srcset="img/gallery/gallery-4-desktop.jpg 1x, img/gallery/gallery-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="324" height="267" srcset="img/gallery/gallery-4-tablet.jpg 1x, img/gallery/gallery-4-tablet@2x.jpg 2x">
                 <img class="card-gallery__image" src="img/gallery/gallery-4-mobile.jpg" srcset="img/gallery/gallery-4-mobile@2x.jpg 2x" width="280" height="280" alt="Тот самый мост дьявола">
@@ -163,13 +175,16 @@
       </section>
       <section class="presentation">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br class="breaker breaker--on-on">&ensp;не подорожали в очередной раз!</p>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br class="breaker breaker--on-on"> не подорожали в очередной раз!</p>
         <div class="video">
           <button class="video__button">
             <span class="visually-hidden">Воспроизвести</span>
           </button>
           <div class="video__box">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/poster-desktop.webp 1x, ./img/poster-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/poster-tablet.webp 1x, ./img/poster-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/poster-mobile.webp 1x, ./img/poster-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" width="800" height="500" srcset="img/poster-desktop.jpg 1x, img/poster-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="648" height="500" srcset="img/poster-tablet.jpg 1x, img/poster-tablet@2x.jpg 2x">
               <img class="video__image" src="img/poster-mobile.jpg" srcset="img/poster-mobile@2x.jpg 2x" width="280" height="177" alt="Постер видеопрезентации">
@@ -224,6 +239,6 @@
       </div>
     </footer>
   </div>
-  <script src="js/index.js?ver=7"></script>
+  <script src="js/index.js?ver=8"></script>
 </body>
 </html>
