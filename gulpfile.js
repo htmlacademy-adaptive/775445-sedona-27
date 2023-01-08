@@ -33,7 +33,13 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      ignoreCustomFragments: [ /<br class="breaker breaker--off-on">\s/gi,
+        /<br class="breaker breaker--on-off">\s/gi,
+        /<br class="breaker breaker--on-on">\s/gi,
+        /<br class="breaker breaker--off-off">\s/gi ]
+    }))
     .pipe(gulp.dest('build'));
 }
 
@@ -106,6 +112,7 @@ const createWebpRoot = () => {
     .pipe(squoosh({
       webp: {}
     }))
+    .pipe(gulp.dest('source/img'))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -116,6 +123,7 @@ const createWebpGallery = () => {
     .pipe(squoosh({
       webp: {}
     }))
+    .pipe(gulp.dest('source/img/gallery'))
     .pipe(gulp.dest('build/img/gallery'))
 }
 
