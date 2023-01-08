@@ -7,7 +7,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css?ver=15">
+  <link rel="stylesheet" href="css/style.min.css?ver=17">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="page__body">
@@ -70,6 +70,9 @@
             </div>
             <div class="advantage-main__picture-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/sedona-desktop.webp 1x, ./img/sedona-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/sedona-tablet.webp 1x, ./img/sedona-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/sedona-mobile.webp 1x, ./img/sedona-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="800" height="256" srcset="img/sedona-desktop.jpg 1x, img/sedona-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="512" height="256" srcset="img/sedona-tablet.jpg 1x, img/sedona-tablet@2x.jpg 2x">
                 <img class="advantage-main__image" src="img/sedona-mobile.jpg" srcset="img/sedona-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
@@ -104,6 +107,9 @@
             </div>
             <div class="advantage-main__picture-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/bridge-desktop.webp 1x, ./img/bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/bridge-tablet.webp 1x, ./img/bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/bridge-mobile.webp 1x, ./img/bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" width="800" height="256" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="512" height="256" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
                 <img class="advantage-main__image" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола в городе Седона.">
@@ -189,6 +195,6 @@
       </div>
     </footer>
   </div>
-  <script src="js/index.js?ver=6"></script>
+  <script src="js/index.js?ver=8"></script>
 </body>
 </html>
